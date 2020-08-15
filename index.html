@@ -55,7 +55,9 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="hero-button" type="button">Заказать услугу</button>
+        <button class="hero-button" type="button" data-modal-open>
+          Заказать услугу
+        </button>
       </section>
       <!-- Advantages -->
       <section class="advantages">
@@ -478,5 +480,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="button-close">
+          <img src="./images/icons/close.svg" alt="" class="icon-close" />
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
